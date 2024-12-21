@@ -16,7 +16,8 @@
 对基于typora的css文件，我们可以直接调用，以下为具体调用步骤：
 
 1. 在文件中找到偏好设置：
-   <img src="./README.assets/image-20241221105925580.png" alt="image-20241221105925580," style="zoom:50%;" />
+
+   <img src="./README.assets/image-20241221105925580.png" alt="image-20241221105925580," style="zoom:30%;" />
 
 2. 找到外观，点击打开主题文件夹，该文件夹存放css文件。
 
