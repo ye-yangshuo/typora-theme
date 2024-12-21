@@ -1,0 +1,198 @@
+html, body {
+  color: #595959;
+  font-size: 15px;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+  background-image: linear-gradient(90deg, rgba(60, 10, 30, 0.04) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(60, 10, 30, 0.04) 3%, rgba(0, 0, 0, 0) 3%);
+  background-size: 20px 20px;
+  background-position: center center;
+  background-color:  #ffffff;
+}
+
+/* 侧边栏 */
+#typora-sidebar {
+	background-color: #D7DBE0;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+  	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+}
+#typora-sidebar .file-list-item.active {
+	background-color: #959aa0;
+	color: #fff;
+}
+
+
+/* 文章区域 */
+#write {
+  /* background: #131b29; */
+  background-image: linear-gradient(90deg, rgba(60, 10, 30, 0.04) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg, rgba(60, 10, 30, 0.04) 3%, rgba(0, 0, 0, 0) 3%);
+  background-size: 20px 20px;
+  background-position: center center;
+  background-color:  #D7DBE0;
+}
+/* 段落 */
+ p {
+  color: #595959;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400;
+}
+/* 段落间距控制 */
+ p+p {
+  margin-top: 16px;
+}
+
+
+/* 标题的通用设置 */
+ h1,
+ h2,
+ h3,
+h4,
+ h5,
+ h6 {
+  color: #135ce0;
+}
+/* 一级标题 */
+ h1 {
+  position: relative;
+  text-align: center;
+  font-size: 22px;
+  margin: 50px 0;
+}
+/* 一级标题前缀，用来放背景图，支持透明度控制 */
+ h1:before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 50%;
+  width: 32px;
+  height: 32px;
+  transform: translateX(-50%);
+  background-size: 100% 100%;
+  opacity: .36;
+  background-repeat: no-repeat;
+  
+}
+/* 二级标题 */
+  h2 {
+  position: relative;
+	font-size: 20px;
+  border-left: 4px solid;
+  padding: 0 0 0 10px;
+  margin: 30px 0;
+}
+/* 三级标题 */
+h3 {
+  font-size: 18px;
+  margin-top: 5px; /* 减少标题上方间距 */
+  margin-bottom: 5px; /* 减少标题下方间距 */
+}
+
+/* 四级标题 */
+h4 {
+  font-size: 16px;
+  margin-top: 5px; /* 减少标题上方间距 */
+  margin-bottom: 5px; /* 减少标题下方间距 */
+}
+
+
+/* 无序列表 */
+  ul {
+  list-style: disc outside;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+/* 无序列表内容 */
+  li {
+  line-height: 2;
+  color: #1b1a1a;
+  margin-bottom: 0;
+  list-style: inherit;
+}
+  img {
+  max-width: 100%;
+}
+
+/* 已加载图片 */
+  img.loaded {
+  margin: 0 auto;
+  display: block;
+}
+/* 引用 */
+  blockquote {
+  background: #de1414;
+  margin: 2em 0;
+  padding: 2px 20px;
+  border-left: 4px solid #3e20d6;
+}
+/* 引用文字 */
+  blockquote p {
+  color: #c72c2c;
+  line-height: 2;
+}
+/* 链接 */
+  a {
+  color: #036aca;
+  border-bottom: 1px solid rgba(3, 106, 202, .8);
+  font-weight: 400;
+  text-decoration: none;
+}
+/* 加粗 */
+  strong {
+  color: #93b4d3;
+}
+/* 加粗斜体 */
+  em strong {
+  color: #93b4d3;
+}
+/* 分隔线 */
+  hr {
+  border-top: 1px solid #135ce0;
+}
+
+
+/* 代码 */
+code,
+.md-fences {
+	/* 去掉背景颜色 */
+	background: #f5eeee ;
+	/* 添加边框 */
+	/* border: 3px solid #000000; */
+}
+code {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.md-fences {
+	margin-left: 2em;
+	margin-bottom: 3em;
+	padding-left: 1ch;
+	padding-right: 1ch;
+}
+pre,
+code,
+tt {
+	font-size: .875em;
+	line-height: 1.714285em;
+}
+
+
+/* 表格 */
+  table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+  table th,
+  table td {
+  border: 1px solid #272d34;
+  padding: .6em 1em;
+}
+  table tr {
+  border-top: 1px solid #444447;
+}
+
+
+/* 鼠标框选颜色 */
+::selection {
+  background-color: #120c0b; /* 选中背景颜色 */
+  color: #ffffff; /* 选中文字颜色 */
+}
